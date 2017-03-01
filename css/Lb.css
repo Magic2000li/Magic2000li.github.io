@@ -1,0 +1,85 @@
+#tab{
+    margin: 10px auto;
+    width: 800px;
+    height: 350px;
+    position: relative;
+}
+#tab #bo{
+    width: 790px;
+    height: 340px;
+    position: relative;
+    /*border-radius: 10px;*/
+}
+#tab #bo img{
+    vertical-align: middle;
+    position: absolute;
+    display: none;
+    border-radius: 5px;
+}
+#tab #bo img.ok{
+    display: block;
+}
+#tab ul{
+    overflow: hidden;
+    position: absolute;
+    width: 150px;
+    height:30px;
+    background: #fefefe;
+    left: 300px;
+    bottom: 10px;
+    border-radius: 5px;
+}
+#tab ul li{
+    width: 20px;
+    height: 20px;
+    float: left;
+    list-style: none;
+    background: #DFDFDF;
+    margin:   5px;
+   border-radius: 50%;
+    text-align: center;
+cursor: pointer;
+
+
+}
+#tab ul li.ok{
+    background:#07AC72;
+}
+#tab #l{
+    width: 30px;
+    height: 50px;
+    background: rgba(121,16,57,.5);
+    text-align: center;
+    line-height: 50px;
+    position: absolute;
+    left: 10px;
+    top:50%;
+    margin-top: -25px;
+    cursor: default;
+    border-radius: 5px;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    /*user-select: none;*/
+}
+#tab #l:hover{
+    background: rgba(121,16,57,1);
+}
+#tab #r{
+    width: 30px;
+    height: 50px;
+    background: rgba(121,16,57,.5);
+    text-align: center;
+    line-height: 50px;
+    position: absolute;
+   right: 10px;
+    top:50%;
+    margin-top: -25px;
+    cursor: default;
+    border-radius: 5px;
+    user-select:none;
+}
+#tab #r:hover{
+    background: rgba(121,16,57,1);
+}
