@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tou</title>
+
+    <style>
+        #a {
+            width: 600px;
+            height: 400px;
+            margin: 50px auto;
+        }
+
+        #a div {
+            width: 500px;
+            height: 300px;
+            border: 1px solid;
+            display: none;
+
+        }
+
+        #a div.active {
+            display: block;
+        }
+
+        #a ul {
+            overflow: hidden;
+        }
+
+        #a ul li {
+            float: left;
+            list-style: none;
+            margin: 10px;
+
+        }
+
+        #a ul li.active {
+            background: linear-gradient(to right, red, green);
+        }
+    </style>
+
+</head>
+<body>
+
+<div id="a">
+    <ul>
+        <li class="active">自然</li>
+        <li>科技</li>
+        <li>精灵</li>
+    </ul>
+
+    <div class="active">1</div>
+    <div>2</div>
+    <div>3</div>
+</div>
+
+<script>
+    var oDiv = document.getElementById("a");
+    var oLi = oDiv.getElementsByTagName("li");
+    var oDiv2 = oDiv.getElementsByTagName("div");
+
+
+
+
+    for (let i = 0; i < oLi.length; i++) {
+        oLi[i].onclick = ()=> {
+
+            for(let j=0;j<oLi.length;j++){
+                oLi[j].className = " ";
+                oDiv2[j].className = " ";
+            }
+            oLi[i].className = "active";
+            oDiv2[i].className = "active"
+
+        };
+    }
+
+
+
+
+//        fn=(o)=>{
+//        for (let i=0;i<oLi.length;i++){
+//            oLi[i].className="";
+//            oDiv2[i].className="";
+//        }
+//        oLi[o].className="active";
+//        oDiv2[o].className="active";
+//    };
+//
+//    for(let j=0;j<oLi.length;j++){
+//        oLi[j].index=j;
+//        oLi[j].onclick=()=>{
+//            fn(j)
+//        }
+//    }
+
+
+</script>
+
+</body>
+</html>
